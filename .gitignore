@@ -185,4 +185,10 @@ pyrightconfig.json
 pyvenv.cfg
 pip-selfcheck.json
 
+# macOS
+.DS_Store
+
+# JetBrains IDE
+.idea/
+
 # End of https://www.toptal.com/developers/gitignore/api/python,venv
