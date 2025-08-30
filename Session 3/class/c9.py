@@ -1,5 +1,4 @@
 text = "I Love Learning Python3 in 50+10 Hours."
-
 # tedad :
 # bozorg -> 10
 # kochik -> 3
