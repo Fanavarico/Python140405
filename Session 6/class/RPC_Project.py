@@ -1,0 +1,79 @@
+import random
+# AI
+# Person
+
+# AI --> etefaqi yeki az 3 halat ro entekhab mikone
+# Rock Paper Scissors
+
+# Person --> entekhabe khodesh ro mige
+
+# bar asase yek system davari barande ro moshakhas mikonam
+
+# 5 bar ejra kafie
+
+# Person -> 2
+# AI -> 3
+# AI is winner
+
+
+# Start Function
+def davar(score_ai, score_human):
+    if score_ai > score_human:
+        print(f"Score AI = {score_ai} | Score Human = {score_human} | AI is winner !")
+    elif score_human > score_ai:
+        print(f"Score AI = {score_ai} | Score Human = {score_human} | Human is winner !")
+    else:
+        print(f"Score AI = {score_ai} | Score Human = {score_human} | Equal")
+
+def ai_choice():
+    entekhabha = ["rock", "paper", "scissors"]
+    return random.choice(entekhabha)
+
+
+
+# End Function
+
+# Start Main
+ai_score = 0
+human_score = 0
+for i in range(1, 6):
+    human_choice = input(f"Round {i} | Enter your choice : ").lower()
+    entekhab_ai = ai_choice()
+    print("-------------------")
+    # Nested conditions
+    if human_choice == entekhab_ai:
+        print("Equal !")
+
+    elif human_choice == "rock":
+        if entekhab_ai == "scissors":
+            human_score += 1
+            print(f"Round {i} | Human = {human_choice} | AI = {entekhab_ai} | Winner is Human")
+        else:
+            ai_score += 1
+            print(f"Round {i} | Human = {human_choice} | AI = {entekhab_ai} | Winner is AI")
+
+
+    elif human_choice == "paper":
+        if entekhab_ai == "rock":
+            human_score += 1
+            print(f"Round {i} | Human = {human_choice} | AI = {entekhab_ai} | Winner is Human")
+
+        else:
+            ai_score += 1
+            print(f"Round {i} | Human = {human_choice} | AI = {entekhab_ai} | Winner is AI")
+
+
+    elif human_choice == "Scissors":
+        if entekhab_ai == "paper":
+            human_score += 1
+            print(f"Round {i} | Human = {human_choice} | AI = {entekhab_ai} | Winner is Human")
+
+        else:
+            ai_score += 1
+            print(f"Round {i} | Human = {human_choice} | AI = {entekhab_ai} | Winner is AI")
+
+    print("-------------------")
+
+davar(ai_score, human_score)
+
+# End Main
