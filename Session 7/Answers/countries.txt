@@ -1,0 +1,5 @@
+iran,100
+usa,300
+germany,90
+uae,50
+canada,100
