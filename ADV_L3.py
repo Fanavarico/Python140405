@@ -5,7 +5,6 @@ Created on Sun Sep 14 20:07:18 2025
 
 ADVANCED LESSON 3
 
-
 ADV_L3.PY
 
 
