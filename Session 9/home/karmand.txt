@@ -1,0 +1,4 @@
+amir,100
+elina,200
+arshia,300
+arqavan,100

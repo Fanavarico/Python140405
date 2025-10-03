@@ -3,7 +3,7 @@
 # key: value
 # index -> X
 # keys
-std1 = { "name": "amir", "last_name": "razavi",
+std1 = { "name": "amir hosein", "last_name": "razavi",
          "height": 190, "weight": 90 }
 
 # for i in std1:
