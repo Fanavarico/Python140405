@@ -1,0 +1,1 @@
+# Class -> Student -> name, age, score1, score2
