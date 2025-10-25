@@ -9,18 +9,18 @@
 # finally
 
 # TypeError
-# try:
-#     print(1 + 1)
-#     a = [1]
-#     print(a[10])
-# except TypeError as e:
-#     print("Fekr mikonam ke int o ba str dari jam mikoni", e)
-# except IndexError as e :
-#     print("Other errors !", e)
-# else:
-#     print("No Error !")
-# finally:
-#     print("Im running any way :)")
+try:
+    print(1 + 1)
+    a = [1]
+    print(a[10])
+except TypeError as e:
+    print("Fekr mikonam ke int o ba str dari jam mikoni", e)
+except IndexError as e :
+    print("Other errors !", e)
+else:
+    print("No Error !")
+finally:
+    print("Im running any way :)")
 
 #
 # # IndexError

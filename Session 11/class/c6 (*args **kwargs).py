@@ -6,7 +6,6 @@ average_score(10, 20, 30, 10, 20, 10)
 
 
 # **kwargs -> student profile with different info - name **kwargs
-
 def student_profile(**kwargs):
     total.append(kwargs)
     print(kwargs, type(kwargs))

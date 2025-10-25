@@ -10,7 +10,7 @@ print(add(10, 20))
 def multiply(a, b):
     return a * b
 
-b = lambda a,b: a *b
+b = lambda a,b: a * b
 
 def is_even(n):
     return n % 2 == 0
