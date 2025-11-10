@@ -2,9 +2,6 @@
 Created on Sun Nov  9 17:35:32 2025
 
 @author: apm
-
-
-
 ADV - L7
 
 
