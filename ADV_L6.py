@@ -3,9 +3,6 @@ Created on Sun Oct 26 17:43:45 2025
 
 @author: apm
 
-
-
-
 ADV-L6
 """
 
