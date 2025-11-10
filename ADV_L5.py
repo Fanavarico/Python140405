@@ -7,8 +7,6 @@ Created on Sun Oct 12 20:02:45 2025
 @author: Ali Pilehvar Meibody
 
 ADV__L5
-
-
 """
 
 
