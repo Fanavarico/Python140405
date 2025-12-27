@@ -1,32 +1,7 @@
-'''
-Class --> vasl bshe b sootone databaset
-
-'''
-
-
 from sqlalchemy import Column, Integer, String, Float, ForeignKey, DateTime
 from sqlalchemy.orm import relationship
 from datetime import datetime
 from database import Base
-
-
-
-#--------------------TABLE K MIKHAY BSAZI CLASS------
-
-
-#_----costumer table------
-''''
-
-------customers---------------
-id name      email       password   card_number      accounts
-1   ali    ali@gmail.com   123456    23282717231       accoutn(details....)
-2   reza   reza@gmail.com  123456                   [4,5]
-
-
----account------
-id balance type pin ..   card_number
-
-'''
 
 
 class Customer(Base):
@@ -34,7 +9,14 @@ class Customer(Base):
     id = Column(Integer, primary_key=True)
     name= Column(String, nullable=False)
     email= Column(String, unique=True)
+    age = Column(Integer, nullable=False)
+    phone = Column(String, nullable=False)
+    address = Column(String, nullable=False)
 
+    #-------timestamps-----
+    created_at = Column(DateTime, default=datetime.now)
+    updated_at = Column(DateTime, default=datetime.now, onupdate=datetime.now)
+    #-------relationships-----
     accounts= relationship("Account", back_populates="customer")
 
 
@@ -56,3 +38,28 @@ class Account(Base):
 
 
 #-------Transactions------
+class Transaction(Base):
+    __tablename__ = "transactions"
+    id = Column(Integer, primary_key=True)
+    amount= Column(Float, nullable=False)
+    type = Column(String, nullable=False) # 'deposit', 'withdraw', 'transfer'
+    timestamp = Column(DateTime, default=datetime.now)
+    account_id= Column(Integer, ForeignKey("accounts.id"))
+    account= relationship("Account", back_populates="transactions")
+
+
+'''
+ def gui_create_customer(self):
+        pass
+    def gui_create_account(self):
+        pass
+    def gui_view_accounts(self):
+        pass
+    def gui_view_transactions(self):
+        pass
+    def gui_delete_account(self):
+        pass
+
+
+
+'''
